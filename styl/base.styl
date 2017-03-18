@@ -1,0 +1,437 @@
+@import 'reset.styl'
+@import 'fonts.styl'
+// Colours
+$blue     = #7696C2
+$dark     = #535D65
+$green    = #A3C276
+$purple   = #9E7CDB
+$red      = #DD9285
+$cto      = #B5D8EB
+$cro      = #EAA6A6
+$chro     = #C8B5EB
+$cco      = #93DFB8
+$yellow   = #EAE9A6
+$orange   = #EBC597
+$gray     = #EFF0F1
+$primary  = $blue
+$slate    = #BBC2C7
+
+colors = {
+  blue:   $blue
+  hc:     $primary
+  dark:   $dark
+  green:  $green
+  purple: $purple
+  red:    $red
+  yellow: $yellow
+  orange: $orange
+  cto:    $cto
+  cro:    $cro
+  chro:   $chro
+  cco:    $cco
+  white:  white
+  gray:   $gray
+  slate:  $slate
+}
+
+// Mixins
+  // 1em = 16px
+    // default = 2em
+
+margin()
+  margin arguments
+margin(sides = auto 2em)
+margin(edges = 2em 0)
+margin(full = 2em)
+
+padding()
+  padding arguments
+padding(sides = auto 2em)
+padding(edges = 2em 0)
+padding(full = 2em)
+
+smc()
+  text-transform uppercase
+  font-size 0.85em
+  font-weight 600
+
+// Universal Styles
+html,body
+  height 100%
+
+body
+  font-family San Francisco
+  color $dark
+  font-size 16px
+
+h1, h2, h3, h4, h5
+  font-weight 600
+  margin 0.5em 0
+
+h1
+  font-weight 100
+  font-size 3em
+
+h2
+  font-size 2.25em
+
+h3
+  font-size 1.5em
+
+h4
+  font-size 1.125em
+
+h5
+  font-size 1em
+
+a
+  text-decoration none
+
+.productlogo
+  svg
+    height 50px
+    display block
+
+  for name, color in colors
+    &.flat
+      &.{name}
+        svg path
+          fill color
+
+for name, color in colors
+  *[fill={name}]
+    background color !important
+    fill color !important
+  *[color={name}]
+    color color
+
+input
+  padding(1.8em 2.2em)
+  font-size 0.85em
+  font-weight 100
+  box-shadow: 0 0 15px 0 rgba(83,94,101,0.10);
+  border 0
+  border-radius: 5px;
+
+  &:focus
+    outline none
+    color $dark
+
+  &[type=email], &[type=text], &[type=password], &[type=name]
+    transition all .075s ease-in-out
+    margin(sides)
+    width 50%
+    max-width 400px
+    display inline-block
+
+    &:focus
+      transform scale(1.025)
+
+.button
+  padding(1.8em 2.2em)
+  display inline-block
+  border-radius 5px
+  transition all .075s ease-in-out
+  margin(full)
+  font-size 0.85em
+
+  &:hover
+    transform scale(1.025)
+
+  for name, color in colors
+    &[fill={name}]
+      color white
+      box-shadow 0 0 15px rgba(0,0,0,0.10)
+    &[fill=white], &[fill=gray]
+      color $dark
+    &[outline={name}]
+      box-shadow inset 0 0 0 2px color
+      color color
+    &[outline=slim]
+      box-shadow inset 0 0 0 1px rgba($gray, 0.25)
+      color rgba($gray, 0.5)
+      padding 0.8em 1.2em
+      margin 0
+    &[color={name}]
+      color color !important
+
+p
+  margin(edges)
+  line-height 1.5em
+
+// Grid
+.row
+  display flex
+  text-align left
+  width 100%
+  max-width 1100px
+  margin-left auto
+  margin-right auto
+  align-items flex-start
+  position relative
+
+  .col
+    margin(0 2em)
+    position relative
+    p
+      margin(1.2em 0)
+
+    &.full
+      width 100%
+    &.half
+      width 50%
+    &.twothirds
+      width 66.66%
+    &.third
+      width 33.33%
+    &.fourth
+      width 25%
+
+.box
+  background white
+  box-shadow 0 0 15px rgba(0,0,0,0.10)
+  border-radius 5px
+  padding(2em)
+
+  &.sm
+    display inline-block
+    i
+      margin-right 0.5em
+
+// Header
+header
+  position relative
+  text-align center
+  height 550px
+  color white
+
+  for product, color in colors
+    &.{product}
+      .pattern
+        span
+          box-shadow 0 0 50px 0 rgba(color,0.25)
+      if product == "cto"
+        background linear-gradient(-180deg, lightness(saturation($cto,100%),55%) 0%, lightness(color,98%) 100%)
+      else if product == "cco"
+        background saturation($cco,65%)
+      else
+        background linear-gradient(-180deg, saturation(color,100%) 20%, lightness(rgba(hue(color,50deg),.1)50%) 100%)
+
+  .pattern
+    position absolute
+    width 100%
+    height 100%
+    z-index 0 !important
+    background url(img/pattern.png)
+    background-size 128px
+
+    > *
+      position absolute
+    span
+      left 0
+      right 0
+      top 0
+      background rgba(white,0.15)
+      &:first-child
+        height 100%
+        transform-origin left top
+        transform skewY(20deg)
+        top 25px
+      &:nth-child(2)
+        height 100%
+        transform-origin left top
+        transform skewY(-30deg)
+      &:last-child
+        height 150%
+        transform-origin left bottom
+        transform skewY(-35deg)
+
+  & *
+    z-index 1
+    position: relative
+
+  nav
+    display flex
+    align-items center
+    width 100%
+    color white
+    smc()
+
+    ul
+      margin(sides)
+      flex 1
+
+      &.dropdown
+        display none
+
+      &.products
+        text-align left
+        li
+          .productlogo
+            svg
+              height 30px
+
+      &.nav
+        text-align right
+
+      li
+        display inline-block
+
+        a
+          color white
+  h1
+    flex none
+    text-shadow: 0 0 25px rgba(83,94,101,0.25);
+
+  p
+    max-width 700px;
+    margin auto
+    text-shadow: 0 0 25px rgba(83,94,101,0.25);
+
+// Container
+section
+
+  &.container
+    position relative
+    padding 3em 0
+
+    p
+      max-width 700px
+      margin auto
+      &.intro
+        text-align center
+        margin-bottom 3em
+
+    ul
+      margin 0
+      padding 0
+      list-style none
+
+    &#intro
+      padding-top 6em
+      padding-bottom 0 !important
+      .productlogo.giant
+        position relative
+        z-index 3 !important
+        top -90px
+        margin-bottom -50px
+        svg, img
+          display block
+          margin -195px auto 0 auto
+          height 182px
+          z-index 4 !important
+          &.holding
+            height 248px
+            z-index 2 !important
+      .row.gfx
+        margin(0 auto) !important
+        img
+          line-height 0
+          display block
+          max-width 100%
+
+      for product, color in colors
+        &.{product}
+          .grid
+            if product == "hc"
+              border-top none
+              margin-top 7em
+            else
+              border-top 2px solid rgba(color,0.1)
+              margin-top 0
+            .row
+              margin(0 auto)
+              max-width 100%
+              flex-wrap wrap
+              align-items stretch
+              .col
+                margin(0)
+                padding(4em)
+                if product == "hc"
+                  border 1px solid rgba(white,0.05)
+                else
+                  border 1px solid rgba(color,0.1)
+                &:first-child, &:nth-child(2)
+                  border-top none
+                &:nth-child(3), &:last-child
+                  border-bottom none
+                &:nth-child(odd)
+                  border-left none
+                &:nth-child(even)
+                  border-right none
+                h3
+                  i
+                    margin-right 0.5em
+                .circle
+                  height 64px
+                  width 64px
+                  display flex
+                  border-radius 100%
+                  text-align center
+                  color white
+                  font-size 1.5em
+                  margin-bottom 1em
+                  i
+                    margin auto
+
+  for product, color in colors
+    &#signup.{product}
+      text-align center
+      overflow hidden
+      > *
+        position relative
+
+      .stripes
+        width 100%
+        height 100%
+        position absolute
+        top 0
+        span
+          display block
+          position absolute
+          left 0
+          right 0
+          top 0
+          background rgba(color,0.1)
+          height 200px
+          &:first-child
+            transform-origin left top
+            transform skewY(-4deg)
+          &:last-child
+            transform-origin right top
+            transform skewY(4deg)
+
+// Footer
+footer
+  padding(4em 0)
+  position relative
+  z-index 10
+  background white
+  box-shadow 0 0 0 1px rgba($dark,0.05)
+
+  .productlogo
+    &.hc
+      margin(0)
+      svg
+        margin(0 auto)
+        height 40px
+
+  ul
+    margin 3em auto
+    list-style none
+    text-align center
+
+    li
+      display inline-block
+      font-size 1.2em
+      margin(sides)
+      .productlogo
+        svg
+          height 32px
+
+  .copyright
+    background none
+    padding 0
+    text-align center
+
+@import 'mobile.styl'

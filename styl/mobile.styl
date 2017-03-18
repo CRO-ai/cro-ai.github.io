@@ -1,0 +1,85 @@
+@media screen and (max-width: 800px)
+  section#features
+    .row
+      flex-wrap wrap !important
+      padding 1em 0
+      .col
+        width 100% !important
+        padding 0 65px !important
+        text-align center
+        order 2
+        i.ic
+          margin auto
+      &:last-child
+        padding-top 10em
+      img
+        &.gfx
+          position relative
+          display block
+          margin 3em auto 1em auto
+          max-width 100%
+          &.prospect
+            height 250px
+          &.revenue
+            position absolute
+            right 10em
+            top 0
+
+// Mobile
+@media screen and (max-width: 650px)
+  body
+    font-size 0.9em !important
+
+    h1
+      font-size 2.25em
+    h2
+      font-size 1.5em
+    h3
+      font-size 1.125em
+    h4, h5
+      font-size 1em
+
+  .button, input[type=text], input[type=email], input[type=password], input[type=name]
+    padding(1.5em)
+    margin(1em 0.5em)
+
+  header
+    &.hc
+      padding-bottom 0 !important
+      height 350px !important
+
+  nav
+    ul
+      li
+        display none !important
+
+  .container
+    padding(2em 0) !important
+    &#signup
+      padding(2em 0) !important
+    &#intro
+      padding-top 6em !important
+      .products
+        margin-top 3em !important
+
+  .row
+    flex-wrap wrap
+    border none !important
+
+    .col
+      width 100% !important
+      border none !important
+      margin(0 1.25em) !important
+
+  .products
+    .col
+      padding 1.5em 1.25em !important
+
+  footer
+    ul
+      &.products
+        li
+          margin(0.5em 2em)
+      &.social
+        li
+          margin(0 1em)

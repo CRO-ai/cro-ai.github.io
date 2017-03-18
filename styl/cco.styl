@@ -1,0 +1,24 @@
+// CCO Styles
+header.cco
+  height auto
+  padding-bottom: 200px
+  overflow hidden
+  &:before, &:after
+    position absolute
+    content ""
+    width 0
+    height 0
+    background none
+    bottom 0
+    z-index 2
+    display block
+    border-style solid
+    background transparent
+  &:before
+    left 0
+    border-color transparent transparent white transparent
+    border-width 0 0 75px 50vw
+  &:after
+    right 0
+    border-color transparent white white white
+    border-width 75px 0 0 50vw

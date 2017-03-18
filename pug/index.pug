@@ -1,0 +1,26 @@
+//- CTO
+extends product.pug
+
+block variables
+  - var title = 'Your Chief Revenue Officer - CRO.ai'
+  - var product = 'cro'
+
+block header
+  h1 Your Chief Revenue Officer
+
+  p Our Chief Revenue Officer gives your team a proven, fully integrated approach for prospecting customers. We help you attact, retain and measure growth so you can focus on hustling.
+
+block introduction
+  h1 Top of the Pyramid
+
+  p.intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo dui arcu, at pulvinar magna hendrerit quis. Praesent nisi leo, consequat et magna sed, aliquet porttitor odio.
+
+block features
+  +feature('Prospect Customers','handshake-o','chro')
+    p We use big data to help you prospect new customers based on their existing technology choices. Our proven approach for building out a targeted customer pipeline ensures that your sales team spends all their time selling.
+  +feature('Marketing Automation','magic','orange')
+    p Our marketing automation uses the latest methods for putting your value proposition in front of the right people, at the right time while our analytics enable you to A/B the message to see what converts to traction best.
+  +feature('Feature Integration','cubes','cto')
+    p Our full stack integration with CTO.ai means that whenever your engineering team ships new features, you will be provided all the tools to announce it, then measure the adoption and feedback for each and every deployment. This gives you a real time feedback loop with your product roadmap so you can A/B test it. 
+  +feature('Revenue Forecasting','line-chart','cco')
+    p While you are A/B testing your marketing and feature launches our platform correlate this traction to your revenue model and forecast your growth giving you a full 360 view of your where revenue growth putting you in a better position to assess your capital requirements and time to profitability.

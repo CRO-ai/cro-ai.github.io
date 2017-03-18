@@ -1,0 +1,93 @@
+//- Product Page
+doctype html
+block variables
+html
+  include head.pug
+  body
+    header(class=product)
+      .pattern
+        span
+        span
+        span
+      
+      nav
+        ul.products
+          li: a.productlogo.flat.white(href='http://hackcapital.com'): include includes/hc-flat.pug
+
+        h1: a.productlogo.flat.white(href='/')
+          if product == 'cto'
+            include includes/cto-flat.pug
+          else if product == 'cro'
+            include includes/cro-flat.pug
+          else if product == 'cco'
+            include includes/cco-flat.pug
+          else if product == 'chro'
+            include includes/chro-flat.pug
+
+        ul.nav
+          li: a(href='mailto:kc@hackcapital.com') Contact
+
+      .row
+        .col.full(align='center')
+          block header
+          //-include beta.pug
+          +beta('dark')
+
+    section.container#intro(class=product)
+      .productlogo.giant              
+        <svg class="holding" viewBox="-15 -30 270 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <path d="M106.179459,3.73727896 C114.723865,-1.19244607 125.278899,-1.19085131 133.271361,3.42042727 L227.476808,65.9970121 C235.049698,70.7432031 240,79.602162 240,88.5444398 L240,129.45556 C240,138.400805 235.047249,147.258238 227.476883,152.002938 L133.820541,214.262721 C125.276135,219.192446 114.721101,219.190851 106.728639,214.579573 L12.5231919,152.002988 C4.95030155,147.256797 5.68434189e-14,138.397838 0,129.45556 L0,88.5444398 C0,79.5991953 4.95275107,70.7417623 12.5231172,65.9970618 L106.179459,3.73727896 Z" id="path-1"></path>
+              <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+                  <feOffset dx="0" dy="-15" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                  <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                  <feColorMatrix values="0 0 0 0 0.325490196   0 0 0 0 0.368627451   0 0 0 0 0.396078431  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+              </filter>
+          </defs>
+          <g id="Combined-Shape" stroke="none" fill="none" fill-rule="nonzero">
+              <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+              <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+          </g>
+        </svg>
+        if product == 'cto'
+          include includes/cto-icon-hifi.pug
+        else if product == 'cro'
+          include includes/cro-icon-hifi.pug
+        else if product == 'cco'
+          include includes/cco-icon-hifi.pug
+        else if product == 'chro'
+          include includes/chro-icon-hifi.pug
+        //-img(src='img/logos/'+product+'-icon-hifi.svg')
+
+      .row
+        .col.full(align='center')
+          block introduction
+            
+      if product == 'cto'
+        .row.gfx
+          .col.full(align='center')
+            img(src='img/pipeline.svg')
+      else if product == 'cro'
+        .row.gfx
+          .col.full(align='center')
+            img(src='img/launch.svg')
+              
+      .grid
+        .row
+          block features
+
+    section.container#signup(class=product)
+      .stripes
+        span
+        span
+      .row
+        .col.full(align='center')
+          .box
+            i.fa.fa-flask(style='font-size:2.625em;',color=product)
+            h4 Join our Beta
+            p We're looking for early partners to join us and work with our technology. Get in touch via our beta list.
+
+            //-include beta.pug
+            +beta(product)
+
+    include footer.pug

@@ -3,35 +3,48 @@
 // Colours
 $blue     = #7696C2
 $dark     = #535D65
+$gray     = #EFF0F1
+$slate    = #BBC2C7
 $green    = #A3C276
 $purple   = #9E7CDB
 $red      = #DD9285
+$yellow   = #EAE9A6
+$orange   = #EBC597
 $cto      = #B5D8EB
 $cro      = #EAA6A6
 $chro     = #C8B5EB
 $cco      = #93DFB8
-$yellow   = #EAE9A6
-$orange   = #EBC597
-$gray     = #EFF0F1
-$primary  = $blue
-$slate    = #BBC2C7
+$pink     = #F1BBD0
+$aqua     = #B6E4ED
 
 colors = {
+  // HC
   blue:   $blue
-  hc:     $primary
+  hc:     $blue
   dark:   $dark
+  white:  white
+  gray:   $gray
+  slate:  $slate
+    slate-dark: $dark
   green:  $green
   purple: $purple
   red:    $red
   yellow: $yellow
   orange: $orange
+    orange-dark: #D99F5A
+  pink: $pink
+    pink-dark: #E33277
+  aqua: $aqua
+    aqua-dark: #7EB9C4
+  // Products
   cto:    $cto
+    cto-dark: #7696C2
   cro:    $cro
+    cro-dark: #DA6262
   chro:   $chro
+    chro-dark: #9E7CDB
   cco:    $cco
-  white:  white
-  gray:   $gray
-  slate:  $slate
+    cco-dark: #40C681
 }
 
 // Mixins
@@ -46,7 +59,7 @@ margin(full = 2em)
 
 padding()
   padding arguments
-padding(sides = auto 2em)
+padding(sides = 0 2em)
 padding(edges = 2em 0)
 padding(full = 2em)
 
@@ -54,6 +67,24 @@ smc()
   text-transform uppercase
   font-size 0.85em
   font-weight 600
+
+debug()
+  border 1px dashed $cro !important
+  color $cro !important
+
+// Animation
+for product, color in colors
+  @keyframes pulse-{product} {
+    0% {
+      box-shadow: 0 0 0 0 rgba(color, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 35px rgba(color, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(color, 0);
+    }
+  }
 
 // Universal Styles
 html,body
@@ -92,17 +123,17 @@ a
     height 50px
     display block
 
-  for name, color in colors
+  for product, color in colors
     &.flat
-      &.{name}
+      &.{product}
         svg path
           fill color
 
-for name, color in colors
-  *[fill={name}]
+for product, color in colors
+  *[fill={product}]
     background color !important
     fill color !important
-  *[color={name}]
+  *[color={product}]
     color color
 
 input
@@ -152,8 +183,6 @@ input
       color rgba($gray, 0.5)
       padding 0.8em 1.2em
       margin 0
-    &[color={name}]
-      color color !important
 
 p
   margin(edges)
@@ -186,6 +215,8 @@ p
       width 33.33%
     &.fourth
       width 25%
+    &.threefourths
+      width 75%
 
 .box
   background white
@@ -341,38 +372,93 @@ section
               margin-top 0
             .row
               margin(0 auto)
-              max-width 100%
+              padding(sides)
+              if product == "hc"
+                max-width 1200px
+              else
+                max-width 100%
               flex-wrap wrap
-              align-items stretch
+              align-items center
+
               .col
                 margin(0)
-                padding(4em)
+                padding(3em 2em)
                 if product == "hc"
                   border 1px solid rgba(white,0.05)
+                  display block
+                  &:first-child, &:nth-child(2)
+                    border-top none
+                  &:nth-child(3), &:last-child
+                    border-bottom none
+                  &:nth-child(odd)
+                    border-left none
+                  &:nth-child(even)
+                    border-right none
                 else
-                  border 1px solid rgba(color,0.1)
-                &:first-child, &:nth-child(2)
-                  border-top none
-                &:nth-child(3), &:last-child
+                  border none
+
+            &.features
+              .row
+                for product, color in colors
+                  &.{product}
+                    background url(img/pattern-mask.png) bottom, linear-gradient(-180deg, rgba(white,0.15) 0%, rgba(color,0.15) 100%)
+                    background-size 64px auto, 100vw auto
+                    border-bottom 2px solid rgba(color,0.2)
+                justify-content space-around
+                &:last-child
                   border-bottom none
-                &:nth-child(odd)
-                  border-left none
-                &:nth-child(even)
-                  border-right none
-                h3
-                  i
-                    margin-right 0.5em
-                .circle
-                  height 64px
-                  width 64px
-                  display flex
-                  border-radius 100%
-                  text-align center
-                  color white
-                  font-size 1.5em
-                  margin-bottom 1em
-                  i
-                    margin auto
+                &:nth-of-type(even)
+                  .col.img
+                    order 2
+                    padding-right 0
+                    padding-left 5em
+
+                .col
+                  padding(6em 0)
+                  for product, color in colors
+                    &.{product}
+                      h3
+                        &:after
+                          display block
+                          content ""
+                          height 2px
+                          width 100px
+                          background color
+                          margin-top 0.6em
+                          border-radius 1px
+                  &.img
+                    flex none
+                    padding-right 5em
+                    .pulse
+                      width 198px
+                      height 198px
+                      border-radius 100%
+                      display flex
+                      img
+                        display block
+                      for product, color in colors
+                        &.{product}
+                          animation 'pulse-'+product 2s infinite
+                          border 2px solid color
+                          background rgba(color,0.05)
+
+                  &.featureitem
+                    flex auto
+                    width 50%
+                  .row
+                    align-items stretch
+                    margin(0)
+                    padding(0)
+                    .col
+                      padding(0 0 0 0)
+                      &:nth-child(odd)
+                        padding(0 2em 0 0)
+                      &:nth-child(even)
+                        padding(0 0 0 2em)
+                      i
+                        margin-right 0.5em
+                      p
+                        margin-top 0
 
   for product, color in colors
     &#signup.{product}

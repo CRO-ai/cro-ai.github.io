@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="222px" height="206px" viewBox="0 0 222 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-21" transform="translate(1.000000, 1.000000)">
+            <g id="Group-11">
+                <path d="M110,37 L110,167" id="Path-4" stroke="#D99F5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+                <path d="M110,37 L110,102 C110,102 98.75,119.75 86.5,128.5 C74.25,137.25 61,137 61,137" id="Path-4-Copy" stroke="#D99F5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4"></path>
+                <path d="M159,37 L159,102 C159,102 147.75,119.75 135.5,128.5 C123.25,137.25 110,137 110,137" id="Path-4-Copy-2" stroke="#D99F5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4" transform="translate(134.500000, 87.000365) scale(-1, 1) translate(-134.500000, -87.000365) "></path>
+                <rect id="Rectangle-5" stroke="#BBC2C7" stroke-width="2" fill="#FFFFFF" x="80" y="0" width="60" height="36" rx="4"></rect>
+                <rect id="Rectangle-15" fill="#BBC2C7" x="83" y="3" width="6" height="6" rx="1"></rect>
+                <rect id="Rectangle-15-Copy" fill="#BBC2C7" x="90" y="3" width="8" height="6" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-2" fill="#BBC2C7" x="99" y="3" width="8" height="6" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-3" fill="#BBC2C7" x="108" y="3" width="8" height="6" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-4" fill="#BBC2C7" x="117" y="3" width="8" height="6" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-5" fill="#BBC2C7" x="131" y="3" width="6" height="6" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-6" fill="#BBC2C7" x="83" y="12" width="6" height="6" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-7" fill="#BBC2C7" x="90" y="12" width="12" height="3" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-8" fill="#BBC2C7" x="90" y="16" width="8" height="2" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-9" fill="#BBC2C7" x="83" y="21" width="8" height="3" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-10" fill="#BBC2C7" x="92" y="21" width="8" height="3" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-11" fill="#BBC2C7" x="101" y="21" width="8" height="3" rx="1"></rect>
+                <rect id="Rectangle-15-Copy-12" fill="#BBC2C7" x="110" y="21" width="8" height="3" rx="1"></rect>
+                <rect id="Rectangle-5-Copy" stroke="#BBC2C7" stroke-width="2" fill="#FFFFFF" x="80" y="168" width="60" height="36" rx="4"></rect>
+                <text id="" font-family="FontAwesome" font-size="20" font-weight="normal" fill="#BBC2C7">
+                    <tspan x="99.2857143" y="193"></tspan>
+                </text>
+                <rect id="Rectangle-5-Copy-2" stroke="#BBC2C7" stroke-width="2" fill="#FFFFFF" x="160" y="120" width="60" height="36" rx="4"></rect>
+                <text id="" font-family="FontAwesome" font-size="20" font-weight="normal" fill="#BBC2C7">
+                    <tspan x="179.285714" y="145"></tspan>
+                </text>
+                <rect id="Rectangle-5-Copy-3" stroke="#BBC2C7" stroke-width="2" fill="#FFFFFF" x="0" y="120" width="60" height="36" rx="4"></rect>
+                <text id="" font-family="FontAwesome" font-size="20" font-weight="normal" fill="#BBC2C7">
+                    <tspan x="20.7142857" y="145"></tspan>
+                </text>
+                <circle id="Oval-2" stroke="#D99F5A" stroke-width="2" fill="#EBC597" cx="110" cy="88" r="27"></circle>
+                <text id="" font-family="FontAwesome" font-size="24" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="98.8571429" y="96"></tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

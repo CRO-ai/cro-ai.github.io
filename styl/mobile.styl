@@ -1,29 +1,29 @@
-@media screen and (max-width: 800px)
-  section#features
+// Wide
+@media screen and (min-width: 1300px)
+  section#intro
     .row
-      flex-wrap wrap !important
-      padding 1em 0
       .col
-        width 100% !important
-        padding 0 65px !important
-        text-align center
-        order 2
-        i.ic
-          margin auto
-      &:last-child
-        padding-top 10em
-      img
-        &.gfx
-          position relative
-          display block
-          margin 3em auto 1em auto
-          max-width 100%
-          &.prospect
-            height 250px
-          &.revenue
-            position absolute
-            right 10em
-            top 0
+        .row
+          .col
+            width 25%
+            padding(0 1em 0 0 !important)
+
+// Medium
+@media screen and (max-width: 750px)
+  .grid.features
+    .row
+      .col
+        &.img
+          width 100%
+          flex auto
+          padding(0 !important)
+          order 0 !important
+          .pulse
+            margin 4em auto 0 auto
+        &.featureitem
+          width 100%
+          padding-top 3em !important
+
 
 // Mobile
 @media screen and (max-width: 650px)
@@ -59,6 +59,8 @@
       padding(2em 0) !important
     &#intro
       padding-top 6em !important
+      .productlogo.giant
+        top -60px !important
       .products
         margin-top 3em !important
 
@@ -74,6 +76,17 @@
   .products
     .col
       padding 1.5em 1.25em !important
+
+  .grid.features
+    .row
+      .col
+        .row
+          .col
+            width 50% !important
+            &:nth-child(odd)
+              padding(0 1em 0 0 !important)
+            &:nth-child(even)
+              padding(0 0 0 1em !important)
 
   footer
     ul

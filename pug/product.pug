@@ -9,7 +9,7 @@ html
         span
         span
         span
-      
+
       nav
         ul.products
           li: a.productlogo.flat.white(href='http://hackcapital.com'): include includes/hc-flat.pug
@@ -34,7 +34,7 @@ html
           +beta('dark')
 
     section.container#intro(class=product)
-      .productlogo.giant              
+      .productlogo.giant
         <svg class="holding" viewBox="-15 -30 270 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
               <path d="M106.179459,3.73727896 C114.723865,-1.19244607 125.278899,-1.19085131 133.271361,3.42042727 L227.476808,65.9970121 C235.049698,70.7432031 240,79.602162 240,88.5444398 L240,129.45556 C240,138.400805 235.047249,147.258238 227.476883,152.002938 L133.820541,214.262721 C125.276135,219.192446 114.721101,219.190851 106.728639,214.579573 L12.5231919,152.002988 C4.95030155,147.256797 5.68434189e-14,138.397838 0,129.45556 L0,88.5444398 C0,79.5991953 4.95275107,70.7417623 12.5231172,65.9970618 L106.179459,3.73727896 Z" id="path-1"></path>
@@ -62,7 +62,7 @@ html
       .row
         .col.full(align='center')
           block introduction
-            
+
       if product == 'cto'
         .row.gfx
           .col.full(align='center')
@@ -71,10 +71,9 @@ html
         .row.gfx
           .col.full(align='center')
             img(src='img/launch.svg')
-              
-      .grid
-        .row
-          block features
+
+      .grid.features
+        block features
 
     section.container#signup(class=product)
       .stripes

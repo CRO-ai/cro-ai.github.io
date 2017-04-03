@@ -4,14 +4,23 @@ mixin button(href,label)
 
 mixin icon(slug,color)
   i.fa(class='fa-'+slug,color=color)
-    
-mixin feature(title,slug,color)
-  .col.half
-    h3
-      +icon(slug,color)
-      = title
-    block
-      
+
+mixin feature(title,color,img)
+  mixin item(title,slug)
+    .col.half
+      h4(color=color+'-dark')
+        +icon(slug,color)
+        =title
+      block
+  .row(class=color)
+    .col.img(class=color)
+      .pulse(class=color+'-dark')
+        img(src='img/'+img+'.svg',class=img)
+    .col.featureitem(class=color)
+      h3(color=color+'-dark')= title
+      .row
+        block
+
 mixin beta(color)
   input#email(type='email', placeholder='Email Address' name='email')
   +button('#','Join Beta List')(fill=color,onClick='signUp(this, this.previousSibling)')

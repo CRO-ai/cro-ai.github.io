@@ -16,6 +16,7 @@ $chro     = #C8B5EB
 $cco      = #93DFB8
 $pink     = #F1BBD0
 $aqua     = #B6E4ED
+$navy     = #92A0C4
 
 colors = {
   // HC
@@ -36,6 +37,8 @@ colors = {
     pink-dark: #E33277
   aqua: $aqua
     aqua-dark: #7EB9C4
+  navy: $navy
+    navy-dark: #2D4587
   // Products
   cto:    $cto
     cto-dark: #7696C2
@@ -401,7 +404,7 @@ section
               .row
                 for product, color in colors
                   &.{product}
-                    background url(img/pattern-mask.png) bottom, linear-gradient(-180deg, rgba(white,0.15) 0%, rgba(color,0.15) 100%)
+                    background url(img/pattern-mask.png) bottom, linear-gradient(-180deg, rgba(white,0.08) 0%, rgba(color,0.08) 100%)
                     background-size 64px auto, 100vw auto
                     border-bottom 2px solid rgba(color,0.2)
                 justify-content space-around
@@ -412,7 +415,6 @@ section
                     order 2
                     padding-right 0
                     padding-left 5em
-
                 .col
                   padding(6em 0)
                   for product, color in colors
@@ -441,10 +443,10 @@ section
                           animation 'pulse-'+product 2s infinite
                           border 2px solid color
                           background rgba(color,0.05)
-
                   &.featureitem
                     flex auto
                     width 50%
+                    max-width 1100px
                   .row
                     align-items stretch
                     margin(0)

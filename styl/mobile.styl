@@ -1,12 +1,19 @@
 // Wide
 @media screen and (min-width: 1300px)
-  section#intro
+  .grid.features
     .row
-      .col
-        .row
-          .col
-            width 25%
-            padding(0 1em 0 0 !important)
+      &:nth-child(odd)
+        .col
+          &.featureitem
+            margin-right auto !important
+          &.img
+            margin-left auto !important
+      &:nth-child(even)
+        .col
+          &.featureitem
+            margin-left auto !important
+          &.img
+            margin-right auto !important
 
 // Medium
 @media screen and (max-width: 750px)

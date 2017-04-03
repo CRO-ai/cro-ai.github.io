@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="98" height="140" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="102" height="144">
+            <rect x="-2" y="-2" width="102" height="144" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3-Copy" transform="translate(0.000000, 2.000000)">
+            <g id="Group-6" transform="translate(0.000000, 29.000000)">
+                <g id="Group-5-Copy" transform="translate(56.000000, 61.000000) rotate(-15.000000) translate(-56.000000, -61.000000) translate(12.000000, 11.000000)">
+                    <rect id="Rectangle-3" stroke="#BBC2C7" stroke-width="2" fill="#FFFFFF" x="0" y="0" width="88" height="100" rx="4"></rect>
+                    <text id="" font-family="FontAwesome" font-size="30" font-weight="normal" fill="#BBC2C7">
+                        <tspan x="27.9285714" y="44.75"></tspan>
+                    </text>
+                    <rect id="Rectangle-4" fill="#BBC2C7" x="7.54285714" y="67.5" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-12" fill="#BBC2C7" x="7.54285714" y="73.75" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-13" fill="#BBC2C7" x="7.54285714" y="80" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-14" fill="#BBC2C7" x="7.54285714" y="91.25" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-15" fill="#BBC2C7" x="7.54285714" y="97.5" width="72.9142857" height="2.5" rx="1.25"></rect>
+                </g>
+                <g id="Group-5-Copy-2" transform="translate(146.000000, 61.000000) rotate(15.000000) translate(-146.000000, -61.000000) translate(102.000000, 11.000000)">
+                    <rect id="Rectangle-3" stroke="#BBC2C7" stroke-width="2" fill="#FFFFFF" x="0" y="0" width="88" height="100" rx="4"></rect>
+                    <text id="" font-family="FontAwesome" font-size="30" font-weight="normal" fill="#BBC2C7">
+                        <tspan x="33.2857143" y="44.75"></tspan>
+                    </text>
+                    <rect id="Rectangle-4" fill="#BBC2C7" x="7.54285714" y="67.5" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-12" fill="#BBC2C7" x="7.54285714" y="73.75" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-13" fill="#BBC2C7" x="7.54285714" y="80" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-14" fill="#BBC2C7" x="7.54285714" y="91.25" width="72.9142857" height="3.75" rx="1.25"></rect>
+                    <rect id="Rectangle-4-Copy-15" fill="#BBC2C7" x="7.54285714" y="97.5" width="72.9142857" height="2.5" rx="1.25"></rect>
+                </g>
+                <g id="Group-5" transform="translate(52.000000, 0.000000)">
+                    <g id="Rectangle-3">
+                        <use fill="#BAC2C7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use stroke="#535D65" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#535D65" x="8.4" y="18.2" width="19.6" height="19.6" rx="2.8"></rect>
+                    <rect id="Rectangle-4" fill="#535D65" x="32.2" y="18.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy" fill="#535D65" x="32.2" y="25.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy-2" fill="#535D65" x="32.2" y="32.2" width="28" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-2-Copy-18" fill="#535D65" opacity="0.200000003" x="8.4" y="46.2" width="19.6" height="19.6" rx="2.8"></rect>
+                    <rect id="Rectangle-4-Copy-5" fill="#535D65" opacity="0.200000003" x="32.2" y="46.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy-4" fill="#535D65" opacity="0.200000003" x="32.2" y="53.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy-3" fill="#535D65" opacity="0.200000003" x="32.2" y="60.2" width="19.6" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-2-Copy-19" fill="#535D65" opacity="0.200000003" x="8.4" y="74.2" width="19.6" height="19.6" rx="2.8"></rect>
+                    <rect id="Rectangle-4-Copy-8" fill="#535D65" opacity="0.200000003" x="32.2" y="74.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy-7" fill="#535D65" opacity="0.200000003" x="32.2" y="81.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy-6" fill="#535D65" opacity="0.200000003" x="32.2" y="88.2" width="42" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-2-Copy-20" fill="#535D65" opacity="0.200000003" x="8.4" y="102.2" width="19.6" height="19.6" rx="2.8"></rect>
+                    <rect id="Rectangle-4-Copy-11" fill="#535D65" opacity="0.200000003" x="32.2" y="102.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy-10" fill="#535D65" opacity="0.200000003" x="32.2" y="109.2" width="57.4" height="4.2" rx="1.4"></rect>
+                    <rect id="Rectangle-4-Copy-9" fill="#535D65" opacity="0.200000003" x="32.2" y="116.2" width="14" height="4.2" rx="1.4"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

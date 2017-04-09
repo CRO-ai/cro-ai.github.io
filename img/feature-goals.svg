@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="220px" viewBox="0 0 260 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>feature-goals</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="10" y="80" width="30" height="30" rx="4"></rect>
+        <rect id="path-2" x="50" y="60" width="30" height="50" rx="4"></rect>
+        <rect id="path-3" x="90" y="40" width="30" height="70" rx="4"></rect>
+        <rect id="path-4" x="130" y="0" width="30" height="110" rx="4"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-33" transform="translate(30.000000, 10.000000)">
+            <path d="M25,106 C25,106 55,95 89,74 C123,53 145,26 145,26" id="Path-9" stroke="#535E65" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M145.708613,25.2968119 C145.888692,25.4780643 146,25.7262806 146,25.9953976 L146,34.0046024 C146,34.5543453 145.556135,35 145,35 C144.447715,35 144,34.5443356 144,34.0046024 L144,27 L136.995398,27 C136.445655,27 136,26.5561352 136,26 C136,25.4477153 136.455664,25 136.995398,25 L145.004602,25 C145.278717,25 145.526952,25.1103557 145.706965,25.2899593 Z" id="Combined-Shape" fill="#535E65"></path>
+            <g id="Group-27" transform="translate(15.000000, 45.000000)">
+                <g id="Rectangle-11">
+                    <use fill="#BAC2C7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#535D65" stroke-width="2" x="9" y="79" width="32" height="32" rx="4"></rect>
+                </g>
+                <g id="Rectangle-11-Copy">
+                    <use fill="#BAC2C7" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#535D65" stroke-width="2" x="49" y="59" width="32" height="52" rx="4"></rect>
+                </g>
+                <g id="Rectangle-11-Copy-2">
+                    <use fill="#BAC2C7" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="#535D65" stroke-width="2" x="89" y="39" width="32" height="72" rx="4"></rect>
+                </g>
+                <g id="Rectangle-11-Copy-3">
+                    <use fill="#BAC2C7" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <rect stroke="#535D65" stroke-width="2" x="129" y="-1" width="32" height="112" rx="4"></rect>
+                </g>
+                <rect id="Rectangle-8" fill="#535E65" x="0" y="120" width="170" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

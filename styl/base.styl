@@ -400,6 +400,10 @@ section
                 else
                   border none
 
+            &.products
+              .row
+                padding-bottom 1.1em
+
             &.features
               .row
                 for product, color in colors
@@ -432,12 +436,17 @@ section
                     flex none
                     padding-right 5em
                     .pulse
-                      width 198px
-                      height 198px
+                      width 200px
+                      height 200px
                       border-radius 100%
                       display flex
+                      position relative
                       img
-                        display block
+                        position absolute
+                        width 260px
+                        height 220px
+                        left -32px
+                        top -12px
                       for product, color in colors
                         &.{product}
                           animation 'pulse-'+product 2s infinite

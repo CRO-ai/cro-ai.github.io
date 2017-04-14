@@ -22,9 +22,9 @@ mixin feature(title,color,img)
         block
 
 mixin beta(color)
-  input#email(type='email', placeholder='Email Address' name='email')
-  +button('#','Join Beta List')(fill=color,onClick='signUp(this, this.previousSibling)')
-
-  .box.sm(color=product,style='display:none;')
+  div#beta-signup
+    input#email(type='email', placeholder='Email Address' name='email')
+    +button('javascript:void(0)','Join Beta List')(fill=color,onClick='signUp(this, this.previousSibling)')
+  div#beta-confirm.box.sm(color=product,style='display:none;')
     +icon('magic fa-lg',product)
-    | Thanks, friend! You're registered for the beta.
+    | Thanks for your interest in our beta!

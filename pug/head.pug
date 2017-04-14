@@ -36,6 +36,7 @@ head
       },2000)
       console.log('beta signup:', input.value);
       analytics.identify(input.value, {
-        beta: true
+        beta: true,
+        email: input.value
       });
     }

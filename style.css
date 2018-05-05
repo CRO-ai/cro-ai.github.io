@@ -1421,6 +1421,9 @@ h5 {
 a {
   text-decoration: none;
 }
+.products .productlogo svg {
+  height: 75px;
+}
 .productlogo svg {
   height: 50px;
   display: block;
@@ -2277,6 +2280,10 @@ header {
   height: 550px;
   color: #fff;
 }
+header #header-body {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 header.blue {
   background: linear-gradient(-180deg, #398cff 20%, rgba(176,160,79,0.1) 100%);
 }
@@ -2503,13 +2510,17 @@ header nav ul.nav {
 }
 header nav ul li {
   display: inline-block;
+  padding: 0 25px;
 }
 header nav ul li a {
   color: #fff;
 }
 header h1 {
   flex: none;
-  text-shadow: 0 0 25px rgba(83,94,101,0.25);
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+header h3 {
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 header p {
   max-width: 700px;
@@ -2528,13 +2539,20 @@ section.container p.intro {
   text-align: center;
   margin-bottom: 3em;
 }
+section.container p.page {
+  margin-bottom: 3em;
+}
 section.container ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+section.container#page {
+  padding-top: 8em;
+  padding-bottom: 4em !important;
+}
 section.container#intro {
-  padding-top: 6em;
+  padding-top: 8em;
   padding-bottom: 0 !important;
 }
 section.container#intro .productlogo.giant {
@@ -19290,6 +19308,46 @@ section#signup.cco-dark .stripes span:first-child {
 section#signup.cco-dark .stripes span:last-child {
   transform-origin: right top;
   transform: skewY(4deg);
+}
+.columns-price {
+  display: inline-block;
+  width: 33.3%;
+  padding: 8px;
+}
+.price {
+  list-style-type: none;
+  border: 1px solid #eff0f1;
+  margin: 0;
+  padding: 0;
+}
+.price .header {
+  background-color: #535d65;
+  color: #fff;
+  font-size: 25px;
+}
+.price li {
+  border-bottom: 1px solid #eff0f1;
+  padding: 20px;
+  text-align: center;
+}
+.price .gray {
+  background-color: #eff0f1;
+  font-size: 20px;
+}
+.grid_item {
+  display: inline-block;
+  width: 33.3%;
+  padding: 8px;
+}
+.grid_item .grid_photo img {
+  border-radius: 50%;
+}
+.grid_item .grid_title {
+  font-weight: 600;
+  color: #7696c2;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 footer {
   padding: 4em 0;

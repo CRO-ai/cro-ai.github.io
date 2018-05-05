@@ -121,6 +121,11 @@ h5
 a
   text-decoration none
 
+.products
+  .productlogo
+    svg
+      height 75px
+
 .productlogo
   svg
     height 50px
@@ -239,6 +244,10 @@ header
   height 550px
   color white
 
+  #header-body
+    margin-top: 25px
+    margin-bottom: 25px
+
   for product, color in colors
     &.{product}
       .pattern
@@ -310,12 +319,16 @@ header
 
       li
         display inline-block
+        padding: 0 25px
 
         a
           color white
   h1
     flex none
-    text-shadow: 0 0 25px rgba(83,94,101,0.25);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+
+  h3
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 
   p
     max-width 700px;
@@ -335,14 +348,20 @@ section
       &.intro
         text-align center
         margin-bottom 3em
+      &.page
+        margin-bottom 3em
 
     ul
       margin 0
       padding 0
       list-style none
 
+    &#page
+      padding-top 8em
+      padding-bottom 4em !important
+
     &#intro
-      padding-top 6em
+      padding-top 8em
       padding-bottom 0 !important
       .productlogo.giant
         position relative
@@ -497,6 +516,50 @@ section
           &:last-child
             transform-origin right top
             transform skewY(4deg)
+
+// Price
+
+.columns-price
+  display inline-block
+  width 33.3%
+  padding 8px
+
+.price
+  list-style-type none
+  border 1px solid $gray
+  margin 0
+  padding 0
+  .header
+    background-color $dark
+    color white
+    font-size 25px
+  li
+    border-bottom 1px solid $gray
+    padding 20px
+    text-align center
+  .gray
+    background-color $gray
+    font-size 20px
+
+// About
+
+
+.grid_item
+  display inline-block
+  width 33.3%
+  padding 8px
+
+  .grid_photo
+    img
+      border-radius 50%
+
+  .grid_title
+    font-weight 600
+    color $blue
+    font-size 1.2em
+    padding-top 10px
+    padding-bottom 5px
+
 
 // Footer
 footer
